@@ -1,7 +1,7 @@
 version: "3"
 services:
   spotweb:
-    image: erikdevries/spotweb
+    image: qballjos/spotweb
     ports:
       - "8085:80"
     depends_on:
