@@ -5,14 +5,14 @@ The main goal of this Dockerfile is to easily set up Spotweb using Docker on the
 ## Pre-build images on Docker Hub (recommended)
 
 - The recommended way to use this Docker image is to use the pre-build image that is available on Docker Hub
-- Visit [Spotweb on Docker Hub](https://hub.docker.com/repository/docker/erikdevries/spotweb)
+- Visit [Spotweb on Docker Hub](https://hub.docker.com/repository/docker/qballjos/spotweb)
 - The pre-build image works on multiple CPU architectures (x86, arm64 and armv7)
 
 ## Quick setup using dockerfile
 
 _Spotweb always requires a database server (e.g. MySQL), the easiest solution is to use the docker-compose setup. The other option is to manually specify an external server using the ENV variables below._
 
-`docker run -p 8085:80 --name spotweb -d -v /etc/localtime:/etc/localtime:ro erikdevries/spotweb`
+`docker run -p 8085:80 --name spotweb -d -v /etc/localtime:/etc/localtime:ro qballjos/spotweb`
 
 Provide one or more of the following environment variables to configure the database server (all optional, default values are given below):
 
@@ -25,7 +25,7 @@ Provide one or more of the following environment variables to configure the data
 
 E.g. to configure server with host `some.external.mysql-server.com` and port `6612` do the following:
 
-`docker run -p 8085:80 --name spotweb -d -v /etc/localtime:/etc/localtime:ro -e "DB_HOST=some.external.mysql-server.com" -e "DB_PORT=6612" erikdevries/spotweb`
+`docker run -p 8085:80 --name spotweb -d -v /etc/localtime:/etc/localtime:ro -e "DB_HOST=some.external.mysql-server.com" -e "DB_PORT=6612" qballjos/spotweb`
 
 ## Quick setup using docker compose
 
