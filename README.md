@@ -67,6 +67,6 @@ volumes:
 ## Information
 
 - In the past separate images were created for x86 and arm in separate Docker Hub repositories, for the most up to date image please visit [Docker Hub](https://hub.docker.com/repository/docker/qballjos/spotweb)
-- Spotweb is configured as an open system after running docker compose up, so everyone who can access the site can register an account (keep this in mind, and also make sure to change the admin password if you plan to expose Spotweb to the outside world!)
+- :warning: Spotweb is configured as an open system after running docker compose up, so everyone who can access the site can register an account (keep this in mind, and also make sure to change the admin password if you plan to expose Spotweb to the outside world!) :warning:
 - If you want to use the Spotweb API, create a new user and use the API key associated with that user
 - See the [official Spotweb Wiki](https://github.com/spotweb/spotweb/wiki) for any questions regarding Spotweb
