@@ -1,5 +1,5 @@
 FROM alpine:3.18
-LABEL maintainer "Jos Vissers <info@josvisserict.nl>"
+LABEL maintainer "Jos Visser <info@josvisserict.nl>"
 
 # Disable timeout for starting services to make "wait for sql" work
 ENV S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0
